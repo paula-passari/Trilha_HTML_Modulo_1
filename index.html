@@ -15,8 +15,16 @@
     <hr>
 
     <!-- Índice aqui -->
+    <h2 id="indice">Índice</h2>
+    <ul>
+        <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+        <li><a href="#tags">Tags do HTML</a></li>
+        <li><a href="#atributos">Atributos</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
 
-    <h2>Estrutura Básica do HTML</h2>
+    <h2 id="estrutura">Estrutura Básica do HTML</h2>
     <p> Os elementos HTML são construídos usando tags, geralmente, uma tag de abertura, o conteúdo e uma tag de fechamento. Há algumas tags que não possuem fechamento. Um documento HTML deve conter as seguintes tags para o correto funcionamento nos navegadores:
     </p>
 
@@ -37,10 +45,11 @@
     <p>
         É colocada dentro da tag <i>&lt;html&gt;</i> depois do fechamento da tag <i>&lt;head&gt;</i>. É o corpo do documento onde é incluído o conteúdo da página, ou seja, <mark>tudo que estiver dentro dessa tag será exbida pelo navegador</mark>.
     </p>
+    <small><a href="#indice">[voltar]</a></small>
 
     <hr>
 
-    <h2>Tags do HTML</h2>
+    <h2 id="tags">Tags do HTML</h2>
     <p>
         Veja um pouco mais sobre algumas tags HTML:
     </p>
@@ -110,23 +119,25 @@
         Esse trecho foi <del>removido</del> do texto.
     </p>
 
+    <small><a href="#indice">[voltar]</a></small>
+
     <hr>
 
-    <h2>Atributos</h2>
+    <h2 id="atributos">Atributos</h2>
     <p>
         Os atributos são usados para definir certos comportamentos de um elemento HTML. Veja alguns exemplos de tags e atributos:
     </p>
 
     <h3>&lt;a&gt;</h3>
     <p>
-        Define um <i>hyperlink</i>, ou seja, faz a ligação entre as páginas do site. Pode receber alguns atributos, dentre eles, o mais importante é o atributo <mark>href</mark> que indica a página de destino. Outro atributo é o <mark>target</mark> que define se a página de destino será aberta em uma nova aba do navegador.<br>
+        Define um <i>hyperlink</i>, ou seja, faz uma ligação entre as páginas. As ligações podem ser externa (do seu website para outro website); interna (as páginas que existem no seu website); e de seções (ligar as seções de uma única página). Pode receber alguns atributos, dentre eles, o mais importante é o atributo <mark>href</mark> que indica a página de destino. Outro atributo é o <mark>target</mark> que define se a página de destino será aberta em uma nova aba do navegador.<br>
         <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">Clique aqui e veja outros atributos para essa tag</a>
     </p><br>
 
     <h3>&lt;img&gt;</h3>
     <p>
         Inclui uma imagem na página HTML. Pode receber vários atributos, dentre eles, os mais importantes são o <mark>src</mark> que define o caminho da imagem e o <mark>alt</mark> que define um texto alternativo, se por algum motivo a imagem não puder ser exibida.<br>
-        Imagem incluída utilizando a tag &lt;img&gt;:<br>
+        Imagem incluída utilizando a tag <strong>&lt;img&gt;</strong>:<br>
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABHVBMVEUXNFnkTSb4+fnxZSn////r6+sAM1voTiSrRTgAJ1GUnKnr7/D7/PwUMljwYynrWSgAIE3kQhAAHEsJLVXwXBGNmKjwWQgbOl7j5unV2+BfbYPosqr5xrj61MjAxcz73dNYZ4A+UW3owLjkPgBtfZHpycOjrbkAFUjtTiLq2NLr8/TxYB4xS2vkQg7kRhnYSypzPUkAAD1/P0SXQj4lNlXPSi5ZOk48N1HqUBGKQETnpZn2oYTHSS+4RjbkWDXr5OLnlob1l3fASDJIW3ayusTIztV9iZtrepBhO0xuPUhLOFKRQT/xvbL4uKTmemP0jmfzfk3kYUTmgm7lZknzhV3nn5H97OXybTfmcVbzgVX4wK/3rJLtgWCjRDrmjnyydUCcAAAJ8UlEQVR4nO2daUPaShSGA0UiJpEliFrrvpRFgnWt1t1qW1ttqy1t9dr//zNuEkkyM2fIQrycyJ3nm4EEH2dCXs6ZoCQJBAKBQCAQCAQCgUAgEAgEAoFAIBgMtJyH5rtZzwWjMc/UmVcjjsHdCHZ4AsHVEY9VV1Gf97aOjdub9bORYOyn5pbcny/Iv5okFea8o3qvNUcc4OzJFXMTGQ+l5HgX0sTmyYK1ScqEYNI8gn7BbPAER4hHZgqd15pXySOsatKToo0ratpFdQ0lcuuE9XfVVjPpYBTz186NEc/MjHnTUZ8nnqk67vpL8sDq3BMP4pMblhjDtDLuDkphhniAMCRe6zkaZlY6s9E8kanBGhjDdNo5s0qTlMrgGGbeFzom1OYBMkxn5u396SEcKEP1/LW5f+6C2TpAhumM+Vtr0gQ1hEk01MgQQBt4nLPXw0eZAm8jhmH6zesOJWBoDuKSw4cL8nedeOk9YF38gEw6s5TTFGYbkiF3kDqGkqY75Faph9+4D+h2LAWG6sTrFbANx5CLY0jsRcWviRL9KDRMZ0bgUQfLMA1fZNAMOUcVhsJQGPbJMENdJdT33lVxYAznybCmzg+g4dmS94N6/obYLYGZpifDuZw3iOocvuFYh5ExmEt7NCy4n5rU89JrbEP1jVuYfTJDXXcGMXOmhTA8K7FV5ic19Pn01LOh89E3c16Sgg3T71cYRuIVUPtgqJVmMqqqZpRVLYwhVR62GYk1in0wlKTC2ZyJ1ZIIYQjIrCTfUHI+OQ6uoYswFIbC8H9pKGmKdbF6JJN2f9ecSmyeyDEXXW01rXoPT7KGF8S+dE+35L2aXVq1Dee8p/OIeT2U9A8zHh/cX0dfIjbDqKiPTXq8ZB7WxlfcXcd06o+jv/SO6rhr+sikHzNxu8J6wUMP3OyQK7nAh7Wcuys7+jrnqBpxMA6FJ257CwQCgUAgEAwc2f6BJLg23C/WcRSz61W5P1Q3kAw/VlP9QcYaw+1+GVY/DbzhR6S3mku5T4byJY6gtNnqk2FqB8kwu9WnQWxtYhnu98dQ3kISlLKnPRjmR8PjGiK90fRo+CI0ruE+muFGnwyH0QzX+2T4Gc1w7b81zDuGSKHNCqYDb7jdH8PqGpahtBNdsKcx3EYzlP5bQ3cfrEhjTtM+GeINYS/B9JkZ9hBMwxuOuvsgGh4AQ6MYwNtyEKwhXiw1DR9YQ2NvKoAvrwK4KrOGD4iGn1nD5nJd8ScNlt4xzFZYQ7TQZtcTGcPilDLkT6DhtDOG7uVwF9EQ1BOLe7EN75JkKF2yhkZ8wyvWEDG0SdImMDyObfiuwRpiVdpsgOF1Pa7hV8fQOWYVUxDGtsPYht/YSCMjTlJObDNiG/5KUKTh1aKKsQ3ZC36qhWoIYlsz7jtNGlzw0SpttuEwMKzFNGwDQ7RKm20IgmlzgRrE6KltNkmxlFdPpGPb0QJk2p+rBmuIGEu5sY0yrC02GQI/PTmCCai02YDYxgRTI8US+hOwG2mQGsDdDI2/5OWiDmsA0Q0vUVcB77AKMhXb6odPYIjVHn0EtIHl77QhGMTQhu4eeLVEC1CLkg/J07B+DU7EyIZoDeCOIYhth0fk5fA4tiFeA7hjCKttlOFesVfDZIQ2nqFBxjZlKr7hKbIhaAM3l4kLovKlGdsQNZbyqm1UMFWWezZ0Iw1qaAsT2+IaotahJF6T1PhJxTYQTN9WfAGxFDm08Qyp2Da0DJj15SuotGGt2nMAbWDjhjKM+vkQVNrkbVxBSQKx7dq/jhHVEDnSmNO0xca2W1/BIMMfwBBZkNMkpWJbVEOVrZbKqJU22xCubYtj2AY1DHxDUG0rxjJMVi3RNgSxbdG/nuhvCNujyKHNNNwNqCfGNcRsHj4agtV7AU1Sf8NXoD2KW2mTQsS2aIagPYpvCG9JCGiS+hves6FNRg7eJpvQ0Hc5hr/hCTBEbQDbZEE98dZ3Pc0dwzRlCGMpth+vDSxHWRNV+UEZggYwanu0Yxhx9R7zCbhxQhk6m5PRAO4YRrwlgTW8pwzZyyFuA7hjCGJbJMPyFSkIG8DIlTbbEDRJoxm+Ig0T1gDuGMLbSoxFArZgyhhWZknDaWCIdH8sZbgGGmw/awRfir6GZcoQhjb0WMq7k7S4R1RqlJrsa9hok4Zg1V4VP7RJ0k7A6r1DX8MXVMaBq/awK20WAav36t9lP8Nf/qENuT3agTWUf9d7NfwDDLErbTbwbuDwho0//NDm7oMtZ8G5JYGapUwbmDGkQxtYtYdeS7SALUSZfKNh28CMIR3aXjCGmDcieHAMqTYw0ySlDenQBmuJCQhtwW1gpknKGN6RhnBN20EiDEFsK9JN0sWmIXMNG41KhfoAPJ2sVXsOMLY1qSapMrR8fCu7lnnHrtz4dk9FtoTdauHBi210LUpR6rWFm9vFotExbJQrf06m2xkWYIjdAO4A17Zx6olKfai2d2MsGvlypXFyB+0skhnaAlfvkWM5tPzzn6tZrp0FDG2I98cSBKzeYyThl6p7/AGVNvxaogVcvXfrs2Dfr14KDNEbwI/A1XvfuwtGMsRe0+YQsHovvKHqxFLPMBGnIW/1nk8L0cewDWIpenv0EVhPNGr1rt0ZP8Mk1hIt4L2y8u3estJFsqth++obCN6JCG281Xsp2by030wdDXEsuYbtVyflinsTd5KahzZdvnvPKC7+/rt8xEoCw/bsux8V7zaLBIY2n684kY3m4fVejZqwtGH77uuvSoPSS6ChdNlFsDOUxuHfhSNFAYbq9Ltf5TJrl0jDTT9D27K5eH1ce5ywj4bp9j07NQncOYB7MwlBkKE9YRcPb6ZqdpfbfF/hTE2OYWoc26xDNuS3CxpN4/Z44f5bo+vgMYYJaB4+EuErTmTjbYAdYYi/ps2BE9u6E2Kdd7JqiRaRmqRRDBMS2iJ+914IQzfSJCS08VbvxTDM592nJqPSZgHriT0ajuappyYllkqSFuULhbsZMnYWiYk0nCZpVMM81EslptJmMR7DcHQ03+0sTkYD2Cbbq+Eof/Acw8QMoZQ9rVblkO+neULP52myXK0m5nIoWf8l4dNGKxVKMh9sZx2otfEJ6z8idCGbze6sH7TkQMu8deb5D17rYH0H7T8++JLNbm5v7JsTNsRQdtGrVvc3tjcTadfB+tOvPaSCh5I3eHLqYU1K5uDRWBN29zTEhKXsWqe7CZ2afMwJ+/FhK5yk+ayth4+Jnpp8zN94Z31Y9r+MmO8r8vD6jvT89DqY0+5yY6vLaWlt3d+4fE5Tk485YdeGwVlpTc3hT89wavIxPS53D1LOhDWnZupg9/L5Tk0+1sXyoWX9d6Fq6yHZl7zeMc+4zfWN9c3nf+b5Mdh2AoFAIBAIBAKBQCAQCAQCgUAgEAji8C+fyNxiRlpi9QAAAABJRU5ErkJggg==" alt="Logo do HTML5" width="100" height="100" style="vertical-align:bottom">
 
     </p><br>
@@ -144,8 +155,53 @@
     <p>
         Define uma descrição para uma abreviação. Use o atributo <mark>title</mark> para definir a descrição completa da abreviação que será exibida ao passar o mouse por cima da abreviação.<br>
         The <abbr title="Second World War">WW2</abbr> was a global war that lasted from 1939 to 1945.
-    </p><br>
+    </p>
+    
+    <small><a href="#indice">[voltar]</a></small>
 
+    <hr>
+
+    <h2 id="listas">Listas</h2>
+    <p>
+        É possível fazer listas em um documento HTML. Geralmente, usa-se listas para fazer o menu de um website.<br>
+        Os dois tipos de listas mais usados são as listas ordenadas e as listas desordenadas. <br>
+    </p>
+        <h3>Lista Ordenada</h3>
+        <p>
+            Como o próprio nome diz, é uma lista de elementos ordenados. Para criá-la, usa-se a tag <mark>&lt;ol&gt;</mark> e usa-se a tag <mark>&lt;li&gt;</mark> para definir os itens da lista.<br>
+            Veja um exemplo de lista ordenada: <br>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </p><br>
+
+        <h3>Lista Desordenada</h3>
+        <p>
+            Cria uma lista desordenada. Para criá-la, usa-se a tag <mark>&lt;ul&gt;</mark> e assim como a lista ordenada, usa-se a tag <mark>&lt;li&gt;</mark> para definir os itens. <br>
+            Veja um exemplo: <br>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </p>
+
+        <small><a href="#indice">[voltar]</a></small>
+
+        <hr>
+
+        <h2 id="referencias">Referências</h2>
+        <p>
+            Para saber mais sobre HTML, confira os sites abaixo:
+            <ol>
+                <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank">MDN Web Docs</a></li>
+            </ol>
+        </p>
+
+        <small><a href="#indice">[voltar]</a></small>
 
 </body>
 </html>
